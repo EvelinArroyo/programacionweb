@@ -4,8 +4,127 @@
 	<title>Tema: tablas</title>
 </head>
 <body>
-<h1 align="CENTER" style="background-color:SlateBlue;">Ejemplo de Tabla</h1>
+<h1 align="CENTER" style="background-color:MediumSeaGreen;">Ejemplo de Tabla</h1>
+
 <div>
+
+	<table border="1" style="border:2px solid MediumSeaGreen;" align="CENTER">
+		<!ENCABEZADO DE LA TABLA>
+		<thead>
+		<tr style="background-color: DodgerBlue">
+			<th> </th>
+             <th scope = "col"> CÓDIGO </th>
+             <th scope = "col"> DEPENDENCIA </th>
+			 <th scope = "col"> CÉDULA </th>
+             <th scope = "col"> NOMBRE </th>
+             <th scope = "col"> APELLIDO </th>
+             <th scope = "col"> EDAD </th>
+             <th scope = "col"> ASISTENCIA </th>
+             <th scope = "col"> PUNTUALIDAD </th>
+		</tr>
+		</thead>
+
+		<!renglon 1>
+		<tbody>
+		<tr>
+			 <th scope = "row" style="background-color: DodgerBlue"> 1 </th>
+			<td>230087003</td>
+			<td>REPUESTOS</td>
+			<td>11233685</td>
+			<td>MARIA</td>
+			<td>FERNANDEZ</td>
+			<td>46</td>
+			<td colspan="2" align="CENTER" rowspan = "2">CUMPLIDO</td>
+		</tr>
+
+		<!renglon 2>
+		<tr>
+			 <th scope = "row" style="background-color: DodgerBlue"> 2 </th>
+			<td>230087004</td>
+			<td>ADMINISTRACION</td>
+			<td>12768399</td>
+			<td>PEDRO</td>
+			<td>GONZALES</td>
+			<td>38</td>
+			
+		</tr>
+
+		<!renglon 3>
+		<tr>
+			 <th scope = "row" style="background-color: DodgerBlue"> 3 </th>
+			<td>230087005</td>
+			<td>ALMACEN</td>
+			<td>8905722</td>
+			<td>GERARDO</td>
+			<td>GIL</td>
+			<td>57</td>
+			<td colspan="2" align="CENTER">INCUMPLIDO</td>
+		</tr>
+
+		<!renglon 4>
+		<tr>
+			 <th scope = "row" style="background-color: DodgerBlue"> 4 </th>
+			<td>230087006</td>
+			<td>REPUESTOS</td>
+			<td>7622503</td>
+			<td>LUIS</td>
+			<td>HERNANDEZ</td>
+			<td>56</td>
+			<td colspan="2" align="CENTER">CUMPLIDO</td>
+		</tr>
+
+		<!renglon 5>
+		<tr>
+			 <th scope = "row" style="background-color: DodgerBlue"> 5 </th>
+			<td>230087007</td>
+			<td>ALMACEN</td>
+			<td>12334778</td>
+			<td>FERNANDA</td>
+			<td>BRITO</td>
+			<td>39</td>
+			<td colspan="2" align="CENTER">INCUMPLIDO</td>
+		</tr>
+
+		<!renglon 6>
+		<tr>
+			 <th scope = "row" style="background-color: DodgerBlue"> 6 </th>
+			<td>230087008</td>
+			<td rowspan = "2">ADMINISTRACION</td>
+			<td>15097882</td>
+			<td>ESTELA</td>
+			<td>MARIN</td>
+			<td>32</td>
+			<td colspan="2" align="CENTER" rowspan = "2">CUMPLIDO</td>
+		</tr>
+		
+
+		<!renglon 7>
+	    <tr>
+			 <th scope = "row" style="background-color: DodgerBlue"> 7 </th>
+			<td>230087009</td>
+			
+			<td>17028553</td>
+			<td>OMAIRA</td>
+			<td>RODRIGUEZ</td>
+			<td>29</td>
+			
+		</tr>
+	</tbody>
+	<tfoot>
+		
+		<!renglon 8>
+	    <tr>
+			 <th scope = "row" style="background-color: DodgerBlue"> 8 </th>
+			<td>230087010</td>
+			<td>GERENCIA</td>
+			<td>17028453</td>
+			<td>RYAN</td>
+			<td>MORA</td>
+			<td>25</td>
+			<td colspan="2" align="CENTER">INCUMPLIDO</td>
+		</tr>
+	</tfoot>
+	</table>
 	
 </div>
 </body>
