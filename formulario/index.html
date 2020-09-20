@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formularios</title>
+</head>
+<body>
+<h1 align="CENTER" style="background-color:DeepPink;">Estilo de vida de los mexicanos</h1>
+
+<div align="CENTER">
+ <img src="imagen.jpg" width="550" height="300" alt="Imagen referente al estilo de vida">
+ </div>
+
+<!titulo>
+ <div>
+	<h2 style="background-color:LightGray;" align="CENTER">Formulario sobre un estilo de vida saludable</h2>
+    <p align="CENTER"> A continuación le mostraremos una serie de preguntas sobre ciertas actividades que realiza en su día a día. </p>
+
+</div>
+
+<!formulario>
+<div>
+<form action = "index.html" method = "POST">
+<!demostracion>
+	<h2 style="background-color:LightGray;" >Demostración del llenado del formulario:</h2>
+     <label for = "respuesta_ejemplo"> Nombre: </label>
+  <input type = "text" name = "nombre_ejemplo" id = "respuesta_ejemplo" value="Fulanito">
+
+<!formulario>
+<br>
+<h2 style="background-color:LightGray;" >¡Comencemos!</h2>
+
+<!pregunta 1>
+  <label for = "respuesta_nombre"> 1. Escriba su nombre: </label>
+  <input type = "text" name = "nombre_usuario" id = "respuesta_nombre">
+<br>
+
+<!pregunta 2>
+<br>
+ <label for = "respuesta_edad">2. Escriba su edad: </label>
+  <input id = "respuesta_edad" name = "edad_usuario" type = "number" min="12" max="99" step = "1">
+<br>
+<!pregunta 3>
+<br>
+  <label for = "dormir">3. Horas que duerme al día: </label>
+  <input id = "dormir" name = "hrsdormir_usuario" type = "number" min = "1" max = "24" step = "1">
+
+<!pregunta 4>
+<br>
+  <p> 4. Elija los aparatos electrónicos que normalmente utiliza: </p>
+  <label for = "tv"> TV </label>
+  <input id = "tv" name = "aparatos_usuario" type = "checkbox" value = "tv">
+  <br>
+  <label for = "cel"> Celular </label>
+  <input id = "cel" name = "aparatos_usuario" type = "checkbox" value = "cel">
+  <br>
+  <label for = "pc"> Computadora </label>
+  <input id = "pc" name = "aparatos_usuario" type = "checkbox" value = "pc">
+ <br>
+  <label for = "juegos"> Consola de videojuegos </label>
+  <input id = "juegos" name = "aparatos_usuario" type = "checkbox" value = "juegos">
+
+   <br>
+  <label for = "pc"> Computadora </label>
+  <input id = "pc" name = "aparatos_usuario" type = "checkbox" value = "pc">
+<br>
+<!pregunta 5>
+  <p> 5. ¿Usted fuma? </p>
+  <input type = "radio" id = "si1" name = "fumar_usuario" value = "si1">
+  <label for = "si1"> Sí </label>
+  <br>
+  <input type = "radio" id = "no1" name = "fumar_usuario" value = "no1">
+  <label for = "no1"> No </label>
+<br>
+<!pregunta 6>
+  <p>6. ¿Consume bebidas azucaradas? </p>
+  <input type = "radio" id = "si2" name = "bebidas_usuario" value = "si2">
+  <label for = "si2"> Sí </label>
+  <br>
+  <input type = "radio" id = "no2" name = "bebidas_usuario" value = "no2">
+  <label for = "no2"> No </label>
+<br>
+<!pregunta 7>
+<p>7. ¿Consume alimentos chatarra? </p>
+  <input type = "radio" id = "si3" name = "alimentos_usuario" value = "si3">
+  <label for = "si3"> Sí </label>
+  <br>
+  <input type = "radio" id = "no3" name = "alimentos_usuario" value = "no3">
+  <label for = "no3"> No </label>
+<br>
+<br>
+<!pregunta 8>
+ <label for = "ejercicio"> 8. ¿Qué tan frecuentemente realiza alguna actividad física? </label>
+  <select id = "ejercicio" name = "ejercicio_usuario">
+    <option value = "nunca"> Nunca </option>
+    <option value = "regularmente"> Regularmente </option>
+    <option value = "siempre"> Siempre</option>
+  </select>
+<br>
+<br>
+
+<!pregunta 9>
+ <label for = "irritacion"> 9. ¿Se irrita con frecuencia cuando las cosas no salen como cree que deben ser? </label>
+  <select id = "irritacion" name = "irritacion_usuario">
+    <option value = "nunca2"> Nunca </option>
+    <option value = "regularmente2"> Regularmente </option>
+    <option value = "siempre2"> Siempre</option>
+  </select>
+<br>
+<br>
+<!pregunta 10>
+ <label for = "sobrepeso"> 10. ¿Considera que tiene sobrepeso? </label>
+  <select id = "sobrepeso" name = "sobrepeso_usuario">
+    <option value = "Sí_peso"> Sí </option>
+    <option value = "No_peso"> No </option>
+  </select>
+<br>
+<br>
+<!mensaje>
+ <label for = "comentario"> Deje su comentario: </label>
+  <hr>
+  <textarea id = "comentario" name = "comentario_usuario" rows = "5" cols = "30">
+  </textarea>
+
+<!envio de formulario>
+<h2 style="background-color:DeepPink;" >Para registrar su formulario, por favor responda lo siguiente:</h2>
+<br>
+ <label for = "respuesta_correo"> Escriba su nombre: </label>
+  <input type = "text" name = "correo_usuario" id = "respuesta_correo">
+  <br>
+  <br>
+  <label for = "clave"> Contraseña: </label>
+  <input type = "password" id = "clave" name = "clave_usuario">
+<br>
+<!boton de enviar>
+<br>
+<input type = "submit" value = "Enviar respuestas">
+
+
+</form>	
+</div>
+
+ 
+
+</body>
+</html>
