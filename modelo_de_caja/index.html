@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <link rel ="stylesheet"  type ="text/css"  href = "styles/styles.css">
+	<meta charset="UTF-8">
+	<title>Modelo de caja CSS</title>
+</head>
+<body>
+<h1 >Modelo de caja CSS</h1>
+
+<section class="indice" id="indice" name="indice">
+<h2>Índice:</h2>
+	<nav>
+		<ol>
+			<li><a href="#definicion">  Definición </a></li>
+			<li><a href="#partes"> Partes del modelo</a></li>
+			<li><a href="#ejemplo"> Ejemplo</a></li>
+			<li><a href="#clasificacion"> Clasificación </a></li>
+			<li><a href="#posicionamiento"> Tipos de posicionamiento </a></li>
+			<li><a href="#referencias"> Referencias </a></li>
+		</ol>
+	</nav>
+</section>
+
+<section id="definicion" name="definicion">
+	<h2>Definición:</h2>
+	<p id="p1">El <strong> modelo de caja </strong>es la manera en que se representan todos los elementos html en una página. Cada elementos HTML generan una caja, el comportamiento de esa caja depende de su clasificación: si es de línea o de bloque.</p>
+	<p>En CSS, el término "modelo de caja" se usa cuando se habla de diseño y maquetación.</p>
+	<p>El modelo de caja CSS es esencialmente una caja que envuelve cada elemento HTML. Consiste en: márgenes, bordes, relleno y el contenido real. La siguiente imagen ilustra el modelo de caja:</p>
+
+	<figure class="centrado" >
+		<img  class="centrado"src="imagen1.jpg" alt="imagen sobre el modelo de caja CSS">
+       <figcaption class="img1">Representación del modelo de caja CSS</figcaption>
+	</figure>
+	<a href="#indice"> Regresar al índice </a>
+</section>
+
+<section id="partes" name="partes">
+	<h2>Explicación de las diferentes partes del modelo de caja CSS:</h2>
+	<ul>
+		<li><strong>Contenido (content) </strong>: el contenido del cuadro, donde aparecen el texto y las imágenes.</li>
+		<li><strong>Relleno (padding) </strong>: limpia un área alrededor del contenido. El acolchado es transparente</li>
+		<li><strong>Borde (border)</strong>: un borde que rodea el relleno y el contenido.</li>
+		<li><strong>Margen (margin)</strong>: borra un área fuera del borde. El margen es transparente</li>
+	</ul>
+
+	<p>A todas las cajas se les puede aplicar las siguientes propiedades:<strong>width, height, padding, margin, border, background</strong>. Lo particular de este concepto es que por defecto el width se refiere al ancho del contenido de un elemento (no al ancho total, de borde a borde). </p>
+
+	<p>En la siguiente imagen se muestra cómo se comporta cada una de las propiedades:
+</p>
+<figure class="centrado" >
+		<img  class="centrado"src="propiedades.png" alt="propiedades del modelo de caja CSS">
+       <figcaption class="img1">Ejemplo del modelo de caja CSS</figcaption>
+	</figure>
+	<a href="#indice"> Regresar al índice </a>
+</section>
+
+<section id="ejemplo" name="ejemplo">
+	<h2>Ejemplo: </h2>
+<figure class="centrado" >
+		<img  class="centrado"src="ejemplo1.png" alt="ejemplo sobre el modelo de caja CSS" width="1300">
+       <figcaption class="img1">Ejemplo del modelo de caja CSS</figcaption>
+	</figure>
+</section>
+<section id="clasificacion" name="clasificacion">
+	<h2>Clasificación:</h2>
+	<p>En CSS, en general, hay dos tipos de cajas: <strong>
+	cajas en bloque y cajas en línea</strong>. Estas características se refieren al modo como se comporta la caja en términos de flujo de página y en relación con otras cajas de la página.</p>
+
+<p>Si una caja se define como un <strong> bloque,</strong> se comportará de las maneras siguientes:</p>
+<ul>
+	<li>La caja fuerza un salto de línea al llegar al final de la línea.</li>
+    <li>La caja se extenderá en la dirección de la línea para llenar todo el espacio disponible que haya en su contenedor. En la mayoría de los casos, esto significa que la caja será tan ancha como su contenedor, y llenará el 100% del espacio disponible.</li>
+     <li>Se respetan las propiedades width y height.</li>
+     <li>El relleno, el margen y el borde mantienen a los otros elementos alejados de la caja.</li>
+</ul>
+
+<p>A menos que decidamos cambiar el tipo de visualización a en línea, elementos como los encabezados (por ejemplo, &lt;h1&gt;) y todos los elementos &lt;p&gt; usan por defecto block como tipo de visualización externa.</p>
+
+<p>Si una caja tiene una visualización externa de tipo <strong>inline,</strong>  entonces:</p>
+<ul>
+	<li>La caja no fuerza ningún salto de línea al llegar al final de la línea.</li>
+	<li>Las propiedades width y height no se aplican.</li>
+	<li>Se aplican relleno, margen y bordes verticales, pero no mantienen alejadas otras cajas en línea.</li>
+	<li>Se aplican relleno, margen y bordes horizontales, y mantienen alejadas otras cajas en línea.</li>
+</ul>
+
+<p>El elemento <a>, que se utiliza para los enlaces, y los elementos &lt;span&gt;, &lt;em&gt; y &lt;strong&gt; son ejemplos de elementos que se muestran en línea por defecto.</p>
+
+<p>El tipo de caja que se aplica a un elemento está definido por los valores de propiedad display, como block y inline, y se relaciona con el valor externo (outer) de visualización (display).</p>
+<a href="#indice"> Regresar al índice </a>
+</section>
+
+<section id="posicionamiento" name="posicionamiento">
+	<h2>Tipos de posicionamiento:</h2>
+	<ol>
+		<li><strong>Posicionamiento predefinido (estático)</strong></li>
+		<p>Los elementos de bloque aparecen unos debajo de otros según el flujo en que los pongamos en el documento. Si asignamos una altura o anchura a uno, los que pongamos en su interior estarán limitados a ese tamaño.</p>
+
+		<li><strong>Posicionamiento relativo</strong></li>
+		<p>Podemos especificar desplazamiento a una caja con respecto a su posición original en el flujo de ejecución (predefinida). Utilizamos la propiedad:</p>
+
+		<p><em>position: relative; </em></p>
+
+		<p>Y después para aplicar el desplazamiento, las propiedades top, left, right y bottom.</p>
+        
+        <p>Por ejemplo:</p>
+
+		<p><em>left: 15px; </em></p>
+
+		<p>Con la regla anterior desplazamos el elemento 15px respecto a su borde izquierdo, de modo que observaremos un desplazamiento hacia la derecha.<br>
+       Este tipo de posicionamiento no modifica el posicionamiento de las demás cajas a su alrededor, pero sí puede provocar solapamientos.</p>
+		<li><strong>Posicionamiento absoluto</strong></li>
+		<p>Con este modo de posicionamiento tomamos como referencia al primer elemento padre o contenedor que no esté estático. Si no existe, la referencia sería la ventana del navegador.</p>
+
+			<p><em>position: absolute; </em></p>
+
+			<p>Las propiedades top, left, right y bottom aplican desplazamiento desde el borde en cuestión del elemento hasta los bordes correspondientes en el elemento padre. En este caso, el desplazamiento influye en el resto de elementos de la página, tratando los demás elementos de rellenar el hueco abandonado.</p>
+	</ol>
+	
+</section>
+</body>
+
+<footer id="referencias" name="referencias">
+	<section id="referencias" name="referencias">
+	<h2>Páginas consultadas:</h2>
+	<ul>
+		<li> <a href="https://www.laurachuburu.com.ar/tutoriales/modelo-de-caja.php" target="_blank"> laurachuburu.com </a></li>
+      
+       <li><a href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/El_modelo_de_caja" target="_blank" >developer.mozilla.org</a> </li>
+      
+        <li><a href="https://www.w3schools.com/css/css_boxmodel.asp" target="_blank" >w3schools.com</a> </li>
+	</ul>
+	</section>
+</footer>
+</html>

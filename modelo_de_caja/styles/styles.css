@@ -1,0 +1,76 @@
+h1,.img1 {
+	text-align: center;
+}
+/*diseño de enlaces*/
+a{
+
+}
+/* fuente */
+*{
+	font-family: "Verdana";
+}
+/*centrar imagen*/
+.centrado{
+display:block;
+   margin:10px auto;
+}
+/*  active*/
+a:active { color: blue; 
+	}        /* Los Enlaces activos  cambiaran a rosa*/
+/* unvisited link */
+a:link {
+  color: orchid;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+body{
+	background-color: lavenderblush;
+	width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+section{
+	border-left: 6px solid greenyellow;
+padding: 40px;
+height: auto;
+}
+h2{
+border-bottom: 6px solid deeppink;
+  background-color: lightgrey
+}
+h1{
+	 border: 3px solid black;
+  outline: deeppink solid 8px;
+  background-color: greenyellow;
+  margin: auto;  
+  padding: 20px;
+  letter-spacing: 3px;
+}
+
+section:hover{
+	  background-color: greenyellow;
+}
+#p1::first-letter {
+  color: deeppink;
+  font-size: xx-large;
+
+}
+
+/* al seleccionar el texto cambiara de color*/
+::selection {
+  color: deeppink;
+  background: white;
+}
+
+#p1{
+	  text-indent: 50px;
+}

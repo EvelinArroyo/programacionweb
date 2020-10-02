@@ -1,0 +1,45 @@
+/*  active*/
+a:active { color: blue; 
+	}        /* Los Enlaces activos  cambiaran a rosa*/
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+
+
+/* checked , cambiamos el borde a color morado y el color del label a salmon*/
+input[type="radio"]:checked + label{
+  box-shadow: 0 0 0 3px darkorchid;
+  /*color: darksalmon;*/
+}
+/*default*/
+input[type="radio"]:default + label{
+  color: darksalmon;
+}
+input:default {
+  background-color: lime;
+}
+/* :dir()*/
+#dir_ejemplo span:dir(rtl) {
+  color: darksalmon;
+}
+#dis {
+  display: none;
+  background-color: yellow;
+  padding: 20px;
+}
+
+div:hover #dis {
+  display: block;
+}
