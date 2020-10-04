@@ -1,0 +1,143 @@
+/*formulario*/
+input[type=text], select ,input[type=number]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid darkcyan;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: darkcyan;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: darkcyan;
+  opacity: 0.6;
+}
+
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Elemento Radio, cuando está marcado */
+input[type="radio"]:checked {
+  box-shadow: 0 0 0 3px darkcyan;
+
+}
+/* Etiquetas para entradas marcadas */
+input:checked + label {
+  color: darkcyan;
+}
+  /* fuente */
+*{
+	font-family: "Verdana";
+}
+/*centrar imagen*/
+.centrado{
+display:block;
+   margin:10px auto;
+
+}
+/*enlaces*/
+/*  active*/
+a:active { color: blue; 
+	}        /* Los Enlaces activos  cambiaran a rosa*/
+/* unvisited link */
+a:link {
+  color: orchid;
+}
+
+/* visited link */
+a:visited {
+   color: darkcyan;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+h1,.img1 {
+	text-align: center;
+
+}
+.img1{
+
+	 color: black;
+	  border: 2px solid darkcyan;
+  border-radius: 5px;
+  background-color: lightblue;
+  width: 20%;
+  height: 10%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.img1:hover{
+	border-color: palevioletred;
+
+}
+
+body{
+	background-color: lemonchiffon;
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+h2{
+border-left: 6px solid darkcyan;
+  background-color: darkgray;
+  opacity: 0.7;
+  font-size: xx-large;
+}
+h1{
+	border-bottom: 8px solid darkcyan ;
+  background-color: lightblue;
+   opacity: 0.5;
+  margin: auto;  
+  padding: 20px;
+  letter-spacing: 3px;
+  font-size: xxx-large;
+}
+/* al seleccionar el texto cambiara de color*/
+::selection {
+  color: deeppink;
+  background: white;
+}
+
+/*primer letra en grande*/
+#p1::first-letter {
+  color: darkcyan;
+  font-size: xx-large;
+
+}
+/*sangria*/
+#p1{
+	  text-indent: 50px;
+}
+#img98{
+height: 400px;
+width: 500px;
+
+}
+
+h2:hover {
+  background-color: lightblue;
+  opacity:0.5;
+  
+
+}
