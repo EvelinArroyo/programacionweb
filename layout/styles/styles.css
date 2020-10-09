@@ -1,0 +1,98 @@
+body{
+	background-color: lightseagreen;
+		margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+}
+
+header{
+	color: white;
+	background-color: darkorange;
+	}
+
+.enlaces{
+	color: white;
+	background-color: hsl(35,67%,61%);
+	margin: auto;
+    width: 27%;
+    border: 3px solid #73AD21;
+ 
+}
+
+li:hover{
+	color: lightseagreen;
+	background-color: hsla(144,37%,69%,0.8);
+ 
+}
+ul{
+	margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li{
+	float: left;
+	 display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+.contenedor{
+	background-color: rgb(209,231,218);
+	padding: 10px;	
+	box-sizing: border-box;
+	width: 600px;
+	height: 350px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+div{
+	background-color: #ff0000;
+	color: white;
+	box-sizing: border-box;
+	width: 250px;
+	height: 150px;
+	padding: 10px;	
+	overflow: hidden;
+
+}
+#p1{
+float: right;
+clear: right;
+margin-bottom: 40px;
+position: relative;
+bottom: 10px;
+}
+#p2{
+
+float: left;
+position: relative;
+bottom: 10px;
+}
+#p3{
+float: right;
+clear: both;
+}
+#p4{
+float: left;
+}
+
+div:first-line {
+color: black;
+font-weight: bold;
+}
+
+h2{
+	position: relative;
+	left: 955px;
+	top: 25px;
+}
+
+h1{
+position: relative;
+bottom: 30px;
+left: 10px;
+}
