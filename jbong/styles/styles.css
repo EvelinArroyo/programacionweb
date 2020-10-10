@@ -1,0 +1,198 @@
+body{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+	box-sizing: border-box;
+
+}
+
+h1{
+font-family: 'Montserrat', sans-serif;
+font-size: 180px;
+position: relative;
+top: 160px;
+left: 30px;
+}
+
+h1:hover{
+
+  text-shadow: 2px 2px 5px white;
+}
+h3:hover{
+	  text-shadow: 2px 2px 5px white;
+}
+h3{
+font-family: 'Montserrat', sans-serif;	
+position: relative;
+bottom: -50px;
+left: 280px;
+}
+
+h2{
+	 font-family: 'Noto Sans JP', sans-serif;
+
+}
+p{
+       font-family: 'Noto Sans JP', sans-serif;
+	
+		font-weight: normal;
+}
+#title_nosotros{
+       font-family: 'Noto Sans JP', sans-serif;
+		font-size: 70px;
+		font-weight: normal;
+		text-align: center;
+		position: relative;
+		top: 40px;
+}
+
+#text_nosotros{
+	font-size: 20px;
+	text-align: center;
+
+}
+.hero{
+	position: relative;
+	left: 417px;
+	bottom: 205px;
+}
+
+
+
+ .presentacion{
+ background-color: hsla(10.59,100%,50%,0.5); 
+
+box-sizing: border-box;
+height: 608px
+
+ }
+
+.nosotros{
+/*background-color: pink;*/
+height: 500px;
+position: relative;
+bottom: 0px;
+background-image: url("nosotros.jpg");
+
+background-size: contain;
+padding: 15px;
+}
+
+#fondo{
+height: 250px;
+width: 900px;
+background-color: white;
+opacity: 0.8;
+position: relative;
+left: 140px;
+top: 50px;
+}
+.productos{
+position: relative;
+ background-color: hsl(200, 43%, 75%); 
+padding: 15px;
+height: 600px;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 180px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 12px;
+}
+
+#i12{
+	position: relative;
+left: 500px;
+}
+
+.title_productos{
+text-align: center;
+letter-spacing: 3px;
+  border: 2px solid white;
+  border-radius: 5px;
+  border-width: auto;
+  background-color: hsla(200, 0%, 100%,0.5);
+
+}
+.title_productos:hover{
+	border: 2px solid hsl(200, 83%, 53%);
+
+}
+.contacto{
+	background-image: url("contact.jpg");
+	position: relative;
+	bottom: 20px;
+	height: 300px;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.contenido_contacto{
+
+	height: 200px;
+width: 900px;
+background-color: white;
+opacity: 0.8;
+position: relative;
+left: 140px;
+top: 50px;
+  letter-spacing: 3px;
+  font-size: 18px;
+}
+
+.title_contacto{
+text-align: center;
+font-size: 30px;
+  letter-spacing: 3px;
+}
+.im1{
+	position: relative;
+	left: 870px;
+	top: 10px;
+}
+.im2{
+	position: relative;
+	bottom: 25px;
+	left: 900px;
+}
+.im3{
+		position: relative;
+	left: 930px;
+	bottom: 60px;
+}
+.im4{
+		position: relative;
+	left: 960px;
+	bottom: 95px;
+}
+ a:active { color: blue; 
+	}        /* Los Enlaces activos  cambiaran a rosa*/
+/* unvisited link */
+a:link {
+  color: orchid;
+}
+
+/* visited link */
+a:visited {
+   color: darkcyan;
+}
+
+/* mouse over link */
+a:hover {
+  color:hsla(10.59,100%,50%,0.5);
+}
