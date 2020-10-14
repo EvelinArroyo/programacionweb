@@ -1,0 +1,143 @@
+/* ESTILOS PREESTABLECIDOS*/
+*{
+	font-family: 'Piazzolla', serif;
+}
+
+body{
+margin-left: auto;
+margin-right: auto;
+	width: 90%;
+	}
+
+h1,.pie_img{
+	text-align: center;
+}
+
+h1{
+	font-size: 40px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+
+}
+
+/*enlaces*/
+/*  active*/
+a:active { color: blue; 
+	}       
+a:link {
+  color: darkgray;
+}
+
+/* visited link */
+a:visited {
+   color: lightcoral;
+}
+
+/* mouse over link */
+
+
+
+
+.title{
+	  border-radius: 25px;
+
+}
+ .title:hover{
+  text-shadow: 2px 2px 5px white;
+
+ }
+/*centrar imagen*/
+.centrado{
+display:block;
+   margin:10px auto;
+
+}
+h2{
+	background-color: hsl(236, 0%, 95%);
+}
+/*design responsive*/
+@media (min-width: 350px )and (max-width: 640px){
+
+body{
+width: 60%;
+}
+
+.title{
+	background-color: plum;
+}
+h3{
+	color: plum;
+}
+/* al seleccionar el texto cambiara de color*/
+::selection {
+  color: white;
+  background: plum;
+}
+
+h2{
+	border-bottom: 5px solid plum;
+	
+}
+a:hover {
+  color: plum;
+}
+}
+ @media (min-width: 641px )and (max-width: 999px){
+
+body{
+width: 70%;
+}
+.title{
+	background-color: hsl(160, 49%, 75%); /*aqua*/
+}
+h3{
+	color:  hsl(160, 49%, 75%);
+}
+
+/* al seleccionar el texto cambiara de color*/
+::selection {
+  color: white;
+  background: hsl(160, 49%, 75%);
+}
+h2{
+	border-bottom: 5px solid hsl(160, 49%, 75%);
+	
+}
+a:hover {
+  color: hsl(160, 49%, 75%);
+}
+}
+
+
+
+@media (min-width: 1000px ){
+
+body{
+width: 90%;
+}
+
+.title{
+	background-color: hsla(236, 79%, 46%,0.5);
+}
+
+h3{
+	color:  hsla(236, 79%, 46%,0.8);
+}
+
+/* al seleccionar el texto cambiara de color*/
+::selection {
+  color: white;
+  background: hsla(236, 79%, 46%,0.8);
+}
+
+h2{
+	border-bottom: 5px solid hsla(236, 79%, 46%,0.5);
+	
+}
+a:hover {
+  color: hsla(236, 79%, 46%,0.7);
+}
+}

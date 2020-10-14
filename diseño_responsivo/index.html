@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <link rel ="stylesheet"  type ="text/css"  href = "styles/styles.css">
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@100&display=swap" rel="stylesheet">
+	<title>Diseño responsivo</title>
+</head>
+<body>
+	<section class="title">
+		<h1>Diseño responsivo</h1>
+	</section>
+<section class="Definicion_y_Or">
+	<h2>Definición y Origen </h2>
+	<p>El diseño responsivo o Responsive Web Design es la técnica que nos permite crear sitios adaptables a las condiciones del ordenador o dispositivo desde donde se van a acceder, sobretodo en lo que tiene relación con la pantalla del sistema donde se están visualizando. El término <em>responsivo</em> es la característica de un sistema que tiene respuesta hacia el medio que le rodea. El diseñador que acuñó el término <em>Responsive Web Design</em> fue Ethan Marcotte, que publicó un post en <em>List Apart</em> y un libro donde explicaba todas las circunstancias y técnicas relacionadas con el diseño adaptable. Aunque es cierto que no fue el primer diseñador que pensó en la necesidad de adaptar el layout de las webs a las diferentes pantallas(de hecho los creadores del estándar CSS ya habían creado tecnologías para producir sitios adaptables), si fue el primero en usar ese término que hoy es tan popular.</p>
+</section>
+
+<section class="diseño_adaptativo" name="diseño_adaptativo">
+	<h2>Diseño adaptativo antes del responsivo</h2>
+
+	<p><strong> Diseño Web Adaptativo</strong> (no adaptativo, que sería una traducción incorrecta del término “adaptive”) es una técnica que utiliza tamaños de pantalla preestablecidos: 320px, 480px, 760px, 960px, 1200px, 1600px y se crea un diseño a medida para cada uno de esos tamaños. Cuando se detecta el dispositivo, se le suministra el diseño que mejor se adapta de entre los realizados. Por lo tanto, no es tan flexible pero sí más cómodo de realizar.</p>
+
+	<p>La <strong>principal diferencia</strong>  es que  uno se adapta con un diseño fluido y el otro con un diseño a saltos.</p>
+
+    <figure>
+	<img class="centrado" src="ejemplo.gif" alt="diseño adaptable vs diseño responsivo">
+	<figcaption class="pie_img">Diferencias entre los dos diseños</figcaption>
+    </figure>
+
+	<p>El <strong>diseño responsive es fluido </strong>porque la estructura se ajusta de manera fluida independientemente del dispositivo en que se esté visualizando.</p>
+
+	<p>En cambio,<strong> el diseño adaptable se muestra en saltos </strong>ya que la página está mostrando algo diferente dependiendo del navegador o dispositivo en que se esté visualizando.</p>
+
+</section>
+
+	
+<section class="evolucion">
+	<h2>Evolución del diseño</h2>
+	<p>
+		Las páginas de internet han evolucionado mucho desde su nacimiento, al igual que los dispositivos desde los que son consultadas. Durante mucho tiempo era posible ver en la parte inferior de muchas páginas web una leyenda que decía algo como "Esta página se visualiza correctamente en un pantalla de 800x600". <br><br> Pero los aparatos evolucionaron y se volvieron más versátiles: las pantallas cada vez lograban mayores resoluciones y las páginas web tenían que optar por uno u otro formato, el más novedoso o el más extendido. <br><br>
+		Finalmente, en 2007 llegaron al mercado los primeros dispositivos móviles capaces de navegar en internet y de visualizar sitios diseñados para equipos de escritorio. <br> <br>
+		En 2010, la irrupción de las tablets en el mercado inclinó definitivamente la balanza a favor de los dispositivos móviles ya que consumir contenido en ellos era mucho más cómodo, así que los diseñadores de sitios web tuvieron que encontrar maneras de que sus sitios pudieran ser visualizados correctamente en ellos. El resultado fue el abandono de plataformas como Flash y la adopción de estándares como HTML 5.
+
+	</p>
+</section>
+
+
+<section class="medidas" name="medidas">
+	<h2>Medidas estándares para tomar como guía</h2>
+
+	<p> Como sabemos, los breakpoints de un diseño Responsive Web Design no deben orientarse a tamaños de pantalla estándar, sino debe ser algo específico para tu propio diseño web. Sin embargo, muchas personas quieren saber, al menos a modo orientativo, qué medidas de pantallas habituales se pueden encontrar en los dispositivos.</p>
+
+<p>Recordando que cualquier colección de medidas para media queries está siempre desactualizada e incompleta, porque es imposible albergar todas y cada una de las medidas de pantalla que hay en el mercado de ordenadores y dispositivos. Así que toma estas medidas de viewport como una referencia únicamente orientativa y sobre todo parcial. </p>
+
+<h3>Clase de tamaño: pequeño</h3>
+
+<p><strong>Dispositivos:</strong>Teléfonos, televisores</p>
+<p><strong>Tamaño de ventana:</strong>320 x 569, 360 x 640, 480 x 854</p>
+<p><strong>Punto de interrupción:</strong>640px o menos</p>
+
+<h3>Clase de tamaño: mediano</h3>
+
+<p><strong>Dispositivos:</strong>Phablets, tabletas</p>
+<p><strong>Tamaño de ventana:</strong>	960x540</p>
+<p><strong>Punto de interrupción:</strong>641px a 1007px</p>
+
+<h3>Clase de tamaño: grande</h3>
+
+<p><strong>Dispositivos:</strong>PC, portátiles, Surface Hubs</p>
+<p><strong>Tamaño de ventana:</strong>1024 x 640, 1366 x 768, 1920 x 1080</p>
+<p><strong>Punto de interrupción:</strong>1008px o mayor</p>
+
+<h3>Algunas herramientas:</h3>
+<ul>
+	<li><a href="http://resizemybrowser.com/" target="_blank">Herramienta para redimensionar nuestro navegador a las principales resoluciones</a></li>
+	<li><a href=" http://www.responsinator.com/" target="_blank">Simulador de dispositivos móviles, podrás ver como queda tu web en los teléfonos y tablets más usados</a></li>
+</ul>
+</section>
+
+<section class="consulta_media">
+	<h2>Consulta a los media</h2>
+	<p>
+		El diseño responsivo solo pudo surgir gracias a la consulta a los media. Las consultas a los media nos permiten ejecutar una serie de pruebas y aplicar CSS selectivamente para diseñar la página de manera que resulte adecuada a las necesidades del usuario. </p>
+		<img class="centrado" src="tamaños.png" width="400px">
+	<p>
+		Se puede añadir múltiples consulta a los media dentro de una hoja de estilo, y ajustar todo tu diseño o solo partes de él para que se adapte mejor a los diferentes tamaños de pantalla. Los puntos en los que se introduce una consulta a los media y se cambia el diseño se conocen como <em>puntos de interrupción.</em>
+	</p>
+
+</section>
+
+<section class="tecnologias" name="tecnologias">
+	<h2>Tecnologías modernas de diseño </h2>
+
+	<p>Los métodos modernos de diseño de páginas web, como el diseño en columnas, Flexbox y Grid son responsivos por defecto. Todos estos métodos asumen que tratas de crear una cuadrícula flexible y te proporcionan los modos más fáciles de hacerlo.</p>
+
+	<h3>Multicol</h3>
+	<p>Cuando especificas un atributo column-count, esto indica en cuántas columnas deseas dividir tu contenido. El navegador entonces calcula el tamaño de estas columnas, que cambiará de acuerdo con el tamaño de la pantalla.</p>
+
+	<p>Si en lugar de ello estableces el atributo column-width, especificas un ancho mínimo. El navegador crea tantas columnas de ese ancho como quepan cómodamente en el contenedor, y reparte el espacio entre todas las columnas. </p>
+
+	<h3>FlexBox</h3>
+
+    <p>En el método Flexbox, los elementos flexibles se encogen y distribuyen el espacio entre los elementos según el espacio que hay en su contenedor, según su comportamiento inicial. Al cambiar los valores de flex-grow y flex-shrink, puedes indicar cómo deseas que se comporten los elementos cuando a su alrededor hay más o menos espacio.</p>
+
+	<h3>Cuadrículas CSS</h3>
+
+	<p>En el diseño de cuadrículas con CSS, la unidad <em> fr </em>permite la distribución del espacio disponible en las trazas de la cuadrícula. </p>
+</section>
+
+<section class="metaetiqueta">
+	<h2>Metaetiqueta viewport</h2>
+	<p>
+		La metaetiqueta view port informa a los navegadores de los dispositivos móviles que deben establecer el ancho de la ventana gráfica al ancho del dispositivo y escalar el documento al 100% de ese tamaño, de modo que el documento se mostrará al tamaño optimizado para esos dispositivos móviles.
+	</p>
+	<span>&lt;meta name="viewport" content="width=device-width,initial-scale=1"&gt;</span>
+	<p>Esta metaetiqueta es necesaria porque los navegadores de los dispositivos móviles tienden a mentir sobre el ancho de su ventana gráfica.
+		<br><br>
+		Se pueden usar otras configuraciones para la metaetiqueta viewport:
+		<ul>
+			<li><b>initial-scale</b>: Establece el zoom inicial de la página, que establecemos en 1 por lo general. </li>
+			<li><b>heigt</b>: Establece una altura específica para la ventana gráfica.</li>
+			<li><b>minimum-scale</b>: Establece el nivel mínimo de zoom.</li>
+			<li><b>maximum-scale</b>: Establece el nivel máximo de zoom. </li>
+			<li><b>user-scalable</b>: Impide el zoom si se establece en <b>no.</b> </li>
+		</ul>
+	</p>
+</section>
+
+<div id="mapa_mental">
+	<h2>Mapa mental</h2>
+	<figure>
+		<img class="centrado" src="mapamental.png" width="1000px " height="400px" alt="imagen mapa mental modelo responsivo">
+	</figure>
+	 <nav class="pie_img"><a  href="https://mm.tt/1654628768?t=FHIMiDhN0W">Da clic aquí para apreciar el mapa</a></nav>
+</div>
+
+<footer>
+		<section class="referencias" name="referencias">
+	<h2>Referencias:</h2>
+<ul>
+	<li><a href="https://www.navarraweb.com/web-responsiva-vs-adaptable-cual-es-la-diferencia/#:~:text=El%20dise%C3%B1o%20responsive%20es%20fluido,en%20que%20se%20est%C3%A9%20visualizando." target="_blank">navarraweb.com</a></li>
+
+	<li><a href="https://docs.microsoft.com/en-us/windows/uwp/design/layout/screen-sizes-and-breakpoints-for-responsive-design" target="_blank">docs.microsoft.com</a></li>
+    <li><a href="https://www.destacaimagen.com/diseno-y-maquetacion-web-smartphones-y-tablets/" target="_blank">destacaimagen.com</a></li>
+     <li><a href="https://desarrolloweb.com/articulos/medidas-estandar-pantallas-media-queries.html" target="_blank">desarrolloweb.com</a></li>
+  <li><a href="https://developer.mozilla.org/es/docs/Learn/CSS/CSS_layout/Dise%C3%B1o_receptivo#Tecnolog%C3%ADas_modernas_de_dise%C3%B1o_de_p%C3%A1ginas_web" target="_blank">developer.mozilla.org</a></li>
+  <li><a href="https://www.workana.com/i/glosario/que-es-el-diseno-responsive/">Workana.com</a></li>
+</ul>
+</section>
+</footer>
+</body>
+</html>
