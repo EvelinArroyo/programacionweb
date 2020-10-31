@@ -1,0 +1,161 @@
+.row>div>p{
+	padding-top: 20px;
+	text-align: left;
+	font-family: 'Kalam',cursive;
+	font-size: 1.2em;
+	color: rgb(33, 97, 140);
+	
+}
+p::first-letter{
+	font-size: xx-large;
+}
+
+p::selection{
+	color: white;
+	background: #4CAF50;
+}
+
+/*color de fondo*/
+body{
+	background-color: rgb(247, 249, 249);
+}
+
+
+.r2{
+	background-image: url("../imagenes/bosque.jpg");
+	background-size: contain;
+height: 570px;
+
+}
+.casa_abuela{
+
+	position: relative;
+	
+}
+
+.abuela{
+		height: 130px;
+	width: 130px;
+	position: relative;
+	top: 220px;
+	left: 100px;
+}
+.caperucita{
+	height: 130px;
+	width: 130px;
+	position: relative;
+
+}
+.cazador{
+		height: 150px;
+	width: 150px;
+	position: relative;
+	top: 250px;
+	left: 60px;
+}
+.lobo_disfrazado{
+	height: 130px;
+	width: 130px;
+	position: relative;
+	top: 250px;
+	left: 60px;
+}
+
+.badge{
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-family: 'Kalam', cursive;
+	font-size: 1.2em;
+   letter-spacing: 0.3em;
+}
+
+@media (min-width:992px )and (max-width: 1200px){
+.r2{
+	height: 500px;
+}
+
+
+}
+
+@media (min-width:769px )and (max-width: 993px){
+
+
+.r2{
+	height: 300px;
+}
+
+.caperucita{
+height: 90px;
+	width: 90px;
+	bottom: 50px;
+}
+
+.abuela{
+		height: 90px;
+	width: 90px;
+	top: 80px;
+}
+.cazador{
+		height: 90px;
+	width: 90px;
+	top: 100px;
+	
+}
+.lobo_disfrazado{
+height: 90px;
+	width: 90px;
+	top: 100px;
+}
+
+.casa_abuela{
+	height: 200px;
+	width: 200px;
+	bottom: 0px;
+
+	
+}
+
+}
+
+@media (max-width: 768px){
+
+
+
+.r2{
+	height: 200px;
+}
+.caperucita{
+height: 70px;
+	width: 70px;
+	bottom: 30px;
+}
+
+.abuela{
+		height: 70px;
+	width: 70px;
+	top: 60px;
+}
+.cazador{
+		height: 70px;
+	width: 70px;
+	top: 60px;
+	
+}
+.lobo_disfrazado{
+height: 70px;
+	width: 70px;
+	top: 100px;
+}
+
+.casa_abuela{
+	height: 120px;
+	width: 120px;
+	bottom: 0px;
+	top: 10px;
+	
+}
+
+}
+span{
+	color: red;
+}

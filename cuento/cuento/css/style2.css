@@ -1,0 +1,44 @@
+/*Styles para p1Esc2*/
+p::first-letter{
+	font-size: xx-large;
+}
+#textP1E2{
+	padding-top: 20px;
+	text-align: left;
+	font-family: 'Kalam', cursive;
+	font-size: 1.2em;
+	color: rgb(33, 97, 140);
+}
+
+div{
+	border: 0px solid black;
+}
+#caperucita{
+	padding-top: 200px;
+}
+#r2{
+	background-image: url("../imagenes/f2.jpg") ;
+	background-repeat: no-repeat;
+	background-size: 100% 90% 
+}
+
+body{
+	background-color: rgb(247, 249, 249);
+}
+
+#r2{
+	height: 400px;
+}
+.badge{
+	margin-bottom: 20px;
+	font-family: 'Kalam', cursive;
+	font-size: 1.2em;
+   letter-spacing: 0.3em;
+}
+#lobo{
+	padding-top: 190px;
+}
+
+#cape, #textoLobo{
+	color: red;
+}

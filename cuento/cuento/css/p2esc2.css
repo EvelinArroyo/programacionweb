@@ -1,0 +1,88 @@
+.row>div>p{
+	padding-top: 20px;
+	text-align: left;
+	font-family: 'Kalam',cursive;
+	font-size: 1.2em;
+	color: rgb(33, 97, 140);
+	
+}
+p::first-letter{
+	font-size: xx-large;
+}
+
+p::selection{
+	color: white;
+	background: #4CAF50;
+}
+
+
+/*color de fondo*/
+body{
+	background-color: rgb(247, 249, 249);
+}
+
+
+.r2{
+	background-image: url("../imagenes/bosque.jpg");
+	background-size: contain;
+height: 570px;
+
+}
+.casa_abuela{
+	
+	position: relative;
+	left: 80px;
+}
+
+
+.caperucita{
+	width: 60%;
+	position: relative;
+top: 150px;
+
+
+}
+.badge{
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-family: 'Kalam', cursive;
+	font-size: 1.2em;
+   letter-spacing: 0.3em;
+}
+
+@media (min-width:992px )and (max-width: 1200px){
+.r2{
+	height: 500px;
+}
+
+}
+
+@media (min-width:769px )and (max-width: 993px){
+
+
+.r2{
+	height: 300px;
+}
+
+.caperucita{
+top: 90px;
+}
+
+
+}
+
+@media (max-width: 768px){
+
+
+
+.r2{
+	height: 200px;
+}
+.caperucita{
+top: 70px;
+}
+
+}
+span{
+	color: red;
+}

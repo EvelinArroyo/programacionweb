@@ -1,0 +1,49 @@
+p::first-letter{
+	font-size: xx-large;
+}
+#textoP1E3{
+	padding-top: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: left;
+	font-family: 'Kalam', cursive;
+	font-size: 1.2em;
+	color: rgb(33, 97, 140);
+}
+
+#r2{
+	background-image: url("../imagenes/bosque1.png") ;
+	background-repeat: no-repeat;
+	background-size: 100% 80%;
+
+}
+#r2{
+	height: 400px;
+}
+
+body{
+	background-color: rgb(247, 249, 249);
+}
+
+#lobo{
+	padding-top: 200px;
+	padding-left: 100px;
+}
+#bosque{
+	height: 400px;
+}
+div{
+	border: 0px solid black;
+}
+#bosque{
+	padding-right: 30px;
+}
+.badge{
+	margin-bottom: 20px;
+	font-family: 'Kalam', cursive;
+	font-size: 1.2em;
+   letter-spacing: 0.3em;
+}
+span{
+	color: red;
+}

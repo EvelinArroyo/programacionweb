@@ -1,0 +1,88 @@
+.row>div>p{
+	padding-top: 20px;
+	text-align: left;
+	font-family: 'Kalam',cursive;
+	font-size: 1.2em;
+	
+}
+p::first-letter{
+	font-size: xx-large;
+}
+
+p::selection{
+	color: white;
+	background: #4CAF50;
+}
+
+/*color de fondo*/
+body{
+	background-color: rgb(176,255,252);
+}
+
+.r2{
+	background-image: url("../imagenes/habitacion_abuela.jpg");
+	background-size: contain;
+}
+
+
+.caperucita{
+	width: 60%;
+	position: relative;
+top: 150px;
+}
+.lobo_cama{
+position: relative;
+right: 60px;
+}
+
+
+.btnSig, .btnAnt{
+ 
+	border-radius: 15px;
+	padding: 10px;
+   font-family: 'Kalam',cursive;
+   letter-spacing: 0.3em;
+}
+
+@media (min-width:992px )and (max-width: 1200px){
+ 
+.r2{
+	height: 350px;
+}
+.lobo_cama{
+top: 30px;
+}
+
+}
+
+@media (min-width:769px )and (max-width: 993px){
+
+ 
+.r2{
+	height: 260px;
+}
+
+.caperucita{
+top: 120px;
+left: 30px;
+}
+.lobo_cama{
+top: 40px;
+}
+}
+
+@media (max-width: 768px){
+
+ 
+
+.r2{
+	height: 180px;
+}
+.caperucita{
+top: 100px;
+}
+
+.lobo_cama{
+top: 30px;
+}
+}
