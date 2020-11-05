@@ -1,0 +1,55 @@
+
+.container{
+	margin-bottom: 0px;
+}
+
+.img1{
+	width: 80%;
+
+}
+
+.img2{
+	width: 90%;
+	margin-left: auto;
+}
+
+p{
+	text-align: justify;
+	font-family: 'Work Sans', sans-serif;
+}
+
+h2 {
+	text-align: center;
+	font-family: 'Itim', cursive;
+}
+h1 {
+font-family: 'Itim', cursive;
+font-size: 4em;
+}
+
+a{
+	font-family: 'Itim', cursive;
+}
+.text_tittle{
+font-family: 'Itim', cursive;
+
+}
+
+body{
+	background-color: cornsilk;
+}
+
+.jumbotron{
+	background-color: rgba(255, 171, 16,0.8 );
+
+}
+
+.ref{
+	background-color: rgba(255, 171, 16,0.5 );
+}
+
+a{
+	color: deeppink;
+
+}
+
