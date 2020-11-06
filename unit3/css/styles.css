@@ -1,0 +1,29 @@
+.c1{
+	background-color: lightskyblue;
+}
+
+p{
+	text-align: justify;
+	font-family: 'Work Sans', sans-serif;
+}
+
+h3{
+	text-align: center;
+	border-bottom: 6px solid lightsalmon;
+	
+}
+h1{
+	text-align: center;
+}
+div>*{
+	border-width: 2px;
+}
+
+*{
+		font-family: 'Itim', cursive;
+}
+
+.jv{
+	background-color: lightcyan;
+
+}

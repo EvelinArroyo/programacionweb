@@ -4,18 +4,14 @@
 .container{
 	margin-bottom: 0px;
 }
+
+.img1{
+	width: 70%;
+
+}
 .container_bread{
 background-color: rgba(255, 171, 16,0.5 );
 
-}
-.img1{
-	width: 80%;
-
-}
-
-.img2{
-	width: 90%;
-	margin-left: auto;
 }
 
 p{
@@ -27,10 +23,13 @@ h2 {
 	text-align: center;
 	font-family: 'Itim', cursive;
 }
+h5{
+text-align: center;
+	font-family: 'Itim', cursive;	
+}
 h1 {
 font-family: 'Itim', cursive;
-font-size: 4em;
-
+font-size: 5em;
 }
 
 a{
@@ -49,18 +48,8 @@ body{
 	
 	background-color: rgba(255, 171, 16,0.5 );
 
-
 }
 
-.ref{
-	background-color: rgba(255, 171, 16,0.5 );
-	padding-bottom: 20px;
+ 
 
-}
-
-
-a{
-	color: deeppink;
-
-}
-
+ 

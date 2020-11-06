@@ -11,7 +11,29 @@
 	<link href="https://fonts.googleapis.com/css2?family=Itim&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-<header class="jumbotron container">
+	    <nav class="navbar navbar-expand-md navbar-light fixed-top ">
+           <a class="navbar-brand" href="home.html">MuyInteresante</a> <!--barra de nav-->
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="home.html">Inicio </a>
+          </li>
+             <li class="nav-item">
+          	<a class="nav-link" href="index.html">Día de muertos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="catrinas.html">Catrinas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="altares.html">Altares</a>
+          </li>
+        </ul>
+      </div>
+    </nav><!--barra de nav-->
+<header class="jumbotron ">
 	<div class="container" >
 		<div class="row ">
 			<div class="col-12 col-sm-8 ">
@@ -24,6 +46,21 @@
 	</div>
 </header>
 
+ <div class="container "><!--contenedor del bread-->
+ 	<div class="row "><!--renglon-->
+ 		<div class="col-md-12">
+           <div id="page-navbar">
+            <nav>
+             <ol class="breadcrumb container_bread">
+                <li class="breadcrumb-item"><span class="no-link">MuyInteresante</span></li>
+                  <li class="breadcrumb-item"><a href="home.html">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="index.html">Día de muertos</a></li>
+             </ol>
+             </nav>
+         </div>
+        </div>
+    </div><!--renglon-->
+ </div><!--contenedor del bread-->
 <div class="container contenedor2"> <!--contenedor main-->
 	<div class="row justify-content-center"><!--renglon 1-->
 			<div class=" col-9 col-sm-9 offset-sm-3 ">
@@ -129,16 +166,20 @@ Según la investigadora, la flor tiene diferente nombre dependiendo de la regió
     		</div>
     	</div>
     </div><!--renglon 5-->
-	<div class="row ref">
+	
+
+</div><!--contenedor-->
+
+<div class="row ref">
 		<div class="col-12 col-md-12 ">
 			<h2 class="col-12 col-md-12 ">Páginas consultadas:</h2>
 			<div class="row ">
-				<div class="col-7 col-md-7">
+				<div class="offset-md-2 col-6  col-md-6">
 				<figcaption>
-					<img src="alebrije.gif" alt="imagen de un alebrije">
+					<img  class="col-10 col-md-10 " src="alebrije.gif" alt="imagen de un alebrije">
 				</figcaption>
 			</div>
-			<div class="offset-md-2 col-3 col-md-3">
+			<div class="col-6 col-md-4 align-self-center">
 				<ul>
 					<li> <a href="https://www.unotv.com/nacional/dia-de-muertos-2020-cuando-vienen-los-difuntos/" target="_blank">unotv.com</a></li>
 					<li> <a href="https://www.eleconomista.com.mx/arteseideas/8-datos-curiosos-del-Dia-de-Muertos-20171018-0101.html" target="_blank">eleconomista.com</a></li>
@@ -151,8 +192,6 @@ Según la investigadora, la flor tiene diferente nombre dependiendo de la regió
 		</div>
 		
 	</div>
-
-</div><!--contenedor-->
 	
  <script type="text/javascript"  src="js/jquery-3.5.1.min.js"></script>
  <script  type="text/javascript" src="js/bootstrap.min.js"></script>
