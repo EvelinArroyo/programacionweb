@@ -13,7 +13,9 @@
 background-color: rgba(255, 171, 16,0.5 );
 
 }
-
+.c1{
+	margin-top: 3rem;
+}
 p{
 	text-align: justify;
 	font-family: 'Work Sans', sans-serif;
