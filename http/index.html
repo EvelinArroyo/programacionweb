@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+
+	<title>Investigación HTTP</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script  type="text/javascript" src="js/script.js" defer></script>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+ <nav class="navbar navbar-expand-md navbar-light fixed-top "><!--barra de nav-->
+	    	<div class="container">
+           <a class="navbar-brand" href="index.html">ProgramaciónWeb</a> 
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+             <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav mr-auto">
+              <li class="nav-item active"><a class="nav-link" href="#rIntro">HTTP </a></li>
+             </ul>
+            </div>
+            </div>
+    </nav><!--barra de nav-->
+
+<div class="container c1"><!--contenedor -->
+	<div class="row row1" id="row1"><!--row 1-->
+		<div class="col-12 col-sm-12">
+				<div class="col-12 col-sm-12 text-center h1 ">
+					<h1 id="title_h1">Protocolo de transferencia de hipertexto</h1>
+				</div>
+			</div>
+	</div><!--row 1-->
+
+
+	<div class="row row2"><!--row 2-->
+		<div class="col-12 col-sm-8 " id="rIntro">
+			<h3>¿Qué es el HTTP?</h3>
+			<p><strong>HTTP</strong>  son las siglas de Hypertext Transfer Protocol, es decir, Protocolo de Transferencia de Hipertexto. 
+				<br> Este concepto es uno de los que Tim Berners-Lee desarrolló en el CERN (Suiza) y formaron la base de la World Wide Web y
+		     	nos permite realizar una petición de datos y recursos, como pueden ser documentos HTML.</p>
+		     	<p> Es la base de cualquier intercambio de datos en la Web, y un protocolo de estructura cliente-servidor, esto quiere decir que una petición de datos es iniciada por el elemento que recibirá los datos (el cliente), normalmente un navegador Web. Así, una página web completa resulta de la unión de distintos sub-documentos recibidos, como, por ejemplo: un documento que especifique el estilo de maquetación de la página web (CSS), el texto, las imágenes, vídeos, scripts, etc.  
+             </p>
+		</div>
+		<div class="col-12 col-sm-4 indice">
+			<div class="row">
+               <div class="col-sm-8 col-8">
+               		<h5 class="text-center">Índice</h5>
+               </div>
+			<div class="col-sm-4 col-4">
+			<form>
+	           <input type="button" name="btnIndice" value="-" id="btnIndice">
+	        </form>
+			</div>
+			
+			<ol id="lista_indice">
+				<li><a href="#index1">¿Cómo funciona HTTP?</a></li>
+				<li><a href="#index2">¿Para qué se usa HTTP?</a> </li>
+				<li><a href="#index3">¿Qué versiones de HTTP existen?</a> </li>
+				<li><a href="#index4">Métodos de petición</a> </li>
+				<li><a href="#index5">Mensajes HTTP</a> </li>
+				<li><a href="#index6">Tipos de códigos de estado más comunes.</a> </li>
+				<li><a href="#ref">Referencias</a></li>
+			</ol>
+		</div>
+	</div><!--row 2-->
+
+  
+
+   <div class="row idx" id="index1 "><!--row 3-->
+   	<div class="col-12 col-sm-12">
+   		<h3 class="text-center">¿Cómo funciona HTTP?</h3>
+   		<p>Cuando escribes una dirección web en tu navegador y se abre la página que deseas, es porque tu navegador se ha comunicado con el servidor web por HTTP. Dicho de otra manera, el protocolo HTTP es el código o lenguaje en el que el navegador le comunica al servidor qué página quiere visualizar.</p>
+   		<p>La manera más fácil de explicar cómo funciona HTTP es describiendo cómo se abre una página web:</p>
+   	</div>
+   	<div class="col-12 col-sm-12">
+   		<ol>
+   			<li>En la barra de direcciones del navegador, el usuario teclea example.com </li>
+   			<li>El navegador envía esa solicitud, o petición HTTP, al servidor web que administre el dominio example.com. <br> Normalmente, la solicitud del cliente dice algo así como “Envíame este archivo”, pero también puede ser  “¿Tienes este archivo?”.</li>
+   			<li>El servidor web recibe la solicitud HTTP, busca el archivo en cuestión (en nuestro ejemplo, la página de inicio de example.com, que corresponde al archivo index.html) y envía en primer lugar una <strong> cabecera o header </strong>. Esta cabecera le comunica al cliente, mediante un código de estado, el resultado de la búsqueda.</li>
+   			<li>Si se ha encontrado el archivo solicitado y el cliente ha solicitado recibirlo (y no solo saber si existe), el servidor envía, tras el header, el <strong> message body </strong> o cuerpo del mensaje, es decir, el contenido solicitado: en nuestro ejemplo, el archivo index.html</li>
+   			<li>El navegador recibe el archivo y lo abre en forma de página web.</li>
+   		</ol>
+   	</div>
+   	<div class=" offset-sm-1 col-10 col-sm-10 ">
+   		<figcaption>
+   			<img class="diagrama " src="images/diagrama.png" alt="Representación esquemática del proceso de comunicación basado en el protocolo HTTP">
+   		</figcaption>
+   	</div>
+   </div><!--row 3-->
+
+    <div class="row index2 idx" id="index2"><!--row 4-->
+    	<h3 class="text-center col-sm-12 col-12">¿Para qué se usa HTTP?</h3>
+	 <div class="col-6 col-sm-3">
+	 	<p>Los navegadores usan HTTP para solicitar cualquier tipo de archivo habitual en las webs modernas: de texto, de vídeo, de código de programación, etc.</p>
+	 </div>
+	  <div class="col-6 col-sm-3">
+	 	<p>Los programas de aplicación utilizan HTTP para cargar archivos y actualizaciones de servidores lejanos.</p>
+	 </div>
+	  <div class="col-6 col-sm-3">
+	 	<p>La API basada en REST es una solución que utiliza HTTP para controlar servicios web.</p>
+	 </div>
+	  <div class="col-6 col-sm-3">
+	 	<p>Otra tecnología que se basa en HTTP es WebDAV.</p>
+	 </div>
+	  <div class=" col-6 col-sm-3">
+	 	<p>En la comunicación de máquina a máquina se utiliza HTTP como protocolo de comunicación entre servicios web.</p>
+	 </div>
+	  <div class="col-6 col-sm-3">
+	 	<p>Los reproductores multimedia también utilizan HTTP.</p>
+	 </div>
+	  <div class="col-6 col-sm-3">
+	 	<p>Las operaciones de acceso a bases de datos en la web y, por lo tanto, también las operaciones CRUD, pueden realizarse también mediante HTTP.</p>
+	 </div>
+
+    </div><!--row 4-->
+
+   <div class="row idx" id="index3 "><!--row 5-->
+   	<h3 class="text-center col-sm-12 col-12">¿Qué versiones de HTTP existen?</h3>
+   	<div class="col-sm-12 col-12">
+   		<h5>La primera versión: HTTP/1</h5>
+   		<p>La versión inicial de HTTP fue bautizada con el número de versión 0.9, consistía enuna sola línea y solo permitía solicitar un archivo HTML del servidor cada vez.El servidor entonces no hacía más que transferir el archivo solicitado, de manera que esta versión del protocolo solo podía manejar archivos HTML.</p>
+   		 <div class="row " ><!--row anidado 1-->
+   	<h5 class="col-12 text-center">Características básicas</h5>
+   	<div class="co-12 col-sm-4">
+   		<p><strong> HTTP no tiene conexión: </strong> el cliente HTTP, es decir, un navegador inicia una solicitud HTTP y después de que se realiza una solicitud, el cliente espera la respuesta. El servidor procesa la solicitud y envía una respuesta, después de lo cual el cliente desconecta la conexión. Por lo tanto, el cliente y el servidor se conocen entre sí solo durante la solicitud y la respuesta actuales. Se realizan más solicitudes en la nueva conexión, ya que el cliente y el servidor son nuevos entre sí.</p>
+   	</div>
+   	<div class="co-12 col-sm-4">
+   	 <p><strong> HTTP es independiente de los medios:</strong> es decir, cualquier tipo de datos puede ser enviado por HTTP siempre que tanto el cliente como el servidor sepan cómo manejar el contenido de los datos. Es necesario que el cliente y el servidor especifiquen el tipo de contenido utilizando el tipo MIME apropiado.</p>	
+   	</div>
+   	<div class="co-12 col-sm-4">
+   		<p><strong>HTTP no tiene estado:</strong>  HTTP no tiene conexión y es un resultado directo de que HTTP es un protocolo sin estado. El servidor y el cliente se conocen entre sí solo durante una solicitud actual. Después, ambos se olvidan el uno del otro. Debido a esta naturaleza del protocolo, ni el cliente ni el navegador pueden retener información entre diferentes solicitudes en las páginas web. </p>
+   	</div>
+   </div><!--row anidado 1-->
+
+   <div class="row"><!--row anidado 2-->
+   	<div class="col-sm-12 col-12">
+   		<h5>Una actualización muy necesitada: HTTP/2</h5>
+   		<p>Según pasaban los años, las páginas web se volvían cada vez más amplias y complejas. Para cargar una web moderna en el navegador, este tiene que solicitar muchos megabytes de datos y enviar hasta cien solicitudes HTTP.</p>
+   		<p>Por esta razón, Google desarrolló un nuevo y experimental protocolo, el SPDY o Speedyo. Este estándar incluye las siguientes mejoras que tienen como objetivo acelerar la carga de las páginas web:</p>
+   		<ol>
+   			<li><strong>Datos binarios.</strong> El protocolo trabaja con datos binarios en lugar de archivos de texto.</li>
+   			<li><strong>Multiplex. </strong>El cliente y el servidor pueden enviar y procesar varias solicitudes HTTP simultáneamente. </li>
+   			<li><strong>Compresión.</strong>  Los headers se comprimen, puesto que suelen ser idénticos en muchas solicitudes HTTP y, de este modo, se evitan las redundancias.</li>
+   			<li><strong>Server Push.</strong> Cuando el servidor prevé qué datos le pedirá el cliente, los envía directamente a la caché del cliente, sin esperar a recibir la solicitud HTTP correspondiente.</li>
+   		</ol>
+   	</div>
+   </div><!--row anidado 2-->
+
+   <div class="row"><!--row anidado 3-->
+   	<div class="col-12 col-sm-12">
+   		<h5>El futuro: HTTP/3</h5>
+   		<p>Un punto débil de todas las versiones anteriores es el protocolo de control de transmisión (TCP) en el que se basan.<br>
+   		 Este protocolo requiere que el receptor de cada paquete de datos confirme la recepción antes de que pueda enviarse el siguiente paquete. De este modo, basta con que se pierda un paquete para que todos los demás tengan que esperar a que dicho paquete sea transmitido de nuevo. Entre especialistas, estos casos son llamados head-of-line blocking.</p>
+   		 <p>Para evitarlos, la nueva versión funcionará con TCP, sino con UDP, que no aplica este tipo de medidas correctivas. A partir de UDP, se ha creado el protocolo QUIC (Quick UDP Internet Connections), que será la base de HTTP/3.</p>
+   		 <p>Si bien HTTP/3 aún no ha sido aprobado oficialmente por la IETF, según W3Techs el 3 % de las páginas web ya utilizan QUIC, o, por así decirlo, HTTP/3.</p>
+   	</div>
+   </div><!--row anidado 3-->
+   	</div><!--cierre de col row 5-->
+   	 
+   </div><!--row 5-->
+
+    <div class="row idx" id="index4 "><!--row 6-->
+    	<h3 class="col-sm-12 col-12 text-center ">Métodos de petición</h3>
+    	<div class="col-sm-12 col-12">
+    		<p>HTTP define una serie predefinida de métodos de petición (algunas veces referido como "verbos") que pueden utilizarse. El protocolo tiene flexibilidad para ir añadiendo nuevos métodos y para así añadir nuevas funcionalidades.
+            Cada método indica la acción que desea que se efectúe sobre el recurso identificado. Lo que este recurso representa depende de la aplicación del servidor. Por ejemplo, el recurso puede corresponderse con un archivo que reside en el servidor.<br>
+            Algunos de ellos son:</p>
+            <div class="row"><!--row anidado 1-->
+            	<div class="col-6 col-sm-3">
+            		<h6 class="title_idx4">GET</h6>
+            		<p>El método GET solicita una representación del recurso especificado. Las solicitudes que usan GET solo deben recuperar datos y no deben tener ningún otro efecto.</p>
+            	</div>
+            	<div class="col-6 col-sm-3">
+            		<h6 class="title_idx4">HEAD</h6>
+            		<p>Pide una respuesta idéntica a la que correspondería a una petición GET, pero en la respuesta no se devuelve el cuerpo. Esto es útil para poder recuperar los metadatos de los encabezados de respuesta, sin tener que transportar todo el contenido.</p>
+            	</div>
+            	<div class="col-6 col-sm-3">
+            		<h6 class="title_idx4">POST</h6>
+            		<p> Envía datos para que sean procesados por el recurso identificado en la URI de la línea petición. Los datos se incluirán en el cuerpo de la petición. A nivel semántico está orientado a crear un nuevo recurso, cuya naturaleza vendrá especificada por la cabecera Content-Type.</p>
+            	</div>
+            	<div class="col-6 col-sm-3">
+            		<h6 class="title_idx4">PUT</h6>
+            		<p>Envía datos al servidor, pero a diferencia del método POST la URI de la línea de petición no hace referencia al recurso que los procesará, sino que identifica al los propios datos . Otra diferencia con POST es semántica: mientras que POST está orientado a la creación de nuevos contenidos, PUT está más orientado a la actualización de los mismos (aunque también podría crearlos).</p>
+            	</div>
+
+            	<div class="col-6 col-sm-3">
+            		<h6 class="title_idx4">DELETE</h6>
+            		<p> Borra el recurso especificado</p>
+            	</div>
+            	<div class="col-6 col-sm-3">
+            		<h6 class="title_idx4">TRACE</h6>
+            		<p>Este método solicita al servidor que introduzca en la respuesta todos los datos que reciba en el mensaje de petición. Se utiliza con fines de depuración y diagnóstico ya que el cliente puede ver lo que llega al servidor y de esta forma ver todo lo que añaden al mensaje los servidores intermedios</p>
+            	</div>
+            	<div class="col-6 col-sm-3">
+            		<h6 class="title_idx4">OPTIONS</h6>
+            		<p>Devuelve los métodos HTTP que el servidor soporta para un URL específico. Esto puede ser utilizado para comprobar la funcionalidad de un servidor web mediante petición en lugar de un recurso específico.</p>
+            	</div>
+            	<div class="col-6 col-sm-3">
+            		<h6 class="title_idx4">CONNECT</h6>
+            		<p>Se utiliza para saber si se tiene acceso a un host, no necesariamente la petición llega al servidor, este método se utiliza principalmente para saber si un proxy nos da acceso a un host bajo condiciones especiales, como por ejemplo "corrientes" de datos bidireccionales encriptadas .</p>
+            	</div>
+            	
+            </div><!--row anidado 1-->
+    	</div>
+    </div><!--row 6-->
+
+   <div class="row idx" id="index5 "><!--row 7-->
+   	  <h3 class="col-sm-12 col-12 text-center ">Mensajes HTTP</h3>
+   	  <div class="col-sm-12 col-12">
+   	  	<p>En las versiones del protocolo HTTP/1.1 y anteriores los mensajes eran de formato texto y eran totalmente comprensibles directamente por una persona.<br>
+   	  	 En HTTP/2, los mensajes estan estructurados en un nuevo formato binario y las tramas permiten la compresión de las cabeceras y su multiplexación. Así pues, incluso si solamente parte del mensaje original en HTTP se envía en este formato, la sematica de cada mensaje es la misma y el cliente puede formar el mensaje original en HTTP/1.1. <br>
+   	  	 <br>
+         Existen dos tipos de mensajes HTTP: <strong> peticiones</strong> y <strong> respuestas.</strong></p>
+         <div class="row"><!--row anidado 1-->
+         	<div class="col-12 col-sm-6">
+         		<h5>Peticiones</h5>
+         		<p>Una petición de HTTP, está formado  por los siguientes campos:</p>
+         		<ul>
+         			<li>Un método HTTP.</li>
+         			<li>La dirección del recurso pedido; la URL del recurso, sin los elementos obvios por el contexto, como pueden ser: sin el  protocolo (http://),  el dominio , o el puerto TCP. </li>
+         			<li>La versión del protocolo HTTP.</li>
+         			<li>Cabeceras HTTP opcionales, que pueden aportar información adicional a los servidores.</li>
+         			<li>O un cuerpo de mensaje, en algún método, como puede ser POST, en el cual envía la información para el servidor.</li>
+         		</ul>
+         	</div>
+         	<div class="col-12 col-sm-6">
+         		<figure>
+         			<img class="img_peticion" src="images/peticion.png" alt="imagen ejemplo de petición HTTP">
+         			<figcaption>Ejemplo de petición HTTP</figcaption>
+         		</figure>
+         	</div>
+         </div><!--row anidado 1-->
+
+         <div class="row"><!--row anidado 2-->
+         	<div class="col-12 col-sm-6">
+         		<h5>Respuestas</h5>
+         		<p>Las respuestas están formadas por los siguentes campos:</p>
+         		<ul>
+         			<li>La versión del protocolo HTTP que están usando.</li>
+         			<li>Un código de estado, indicando si la petición ha sido exitosa, o no, y debido a que.</li>
+         			<li>Un mensaje de estado, una breve descripción del código de estado. </li>
+         			<li>Cabeceras HTTP, como las de las peticiones.</li>
+                    <li>Opcionalmente, el recurso que se ha pedido.</li>
+
+         		</ul>
+         	</div>
+         	<div class="col-12 col-sm-6">
+         		<figure>
+         			<img class="img_respuesta" src="images/respuesta.png" alt="imagen ejemplo de respuesta HTTP">
+         			<figcaption>Ejemplo de respuesta HTTP</figcaption>
+         		</figure>
+         	</div>
+         </div><!--row anidado 2-->
+   	  </div>
+   </div><!--row 7-->
+   
+    <div class="row idx" id="index6">
+    	<div class="col-sm-12 col-12">
+    		<h3 class="col-sm-12 col-12 text-center">Tipos de códigos de estado más comunes.</h3>
+    		<p>En respuesta a las solicitudes HTTP, los servidores a menudo emiten códigos de respuesta, lo que indica que la solicitud se está procesando, que hubo un error en la solicitud o que la solicitud se está redireccionando. Algunos de ellos son:</p>
+    	</div>
+
+    	<div class=" text-center col-3 col-sm-3">
+    		<h6 class="title_idx6">200</h6>
+    	</div>
+    	<div class="col-9 col-sm-9">
+    		<p> OK. Esto significa que la solicitud, como GET o POST, funcionó y se está atendiendo.</p>
+    	</div>
+       
+    	<div class=" text-center col-3 col-sm-3">
+    		<h6 class="title_idx6">302</h6>
+    	</div>
+    	<div class="col-9 col-sm-9">
+    		<p> FOUND (encontrado). Redirecciona a una nueva URL, ya que la URL original ha sido movida. Esto no es un error; la mayoría de los navegadores obtendrá la nueva paágina.</p>
+    	</div>
+
+
+    	<div class=" text-center col-3 col-sm-3">
+    		<h6 class="title_idx6">304</h6>
+    	</div>
+    	<div class="col-9 col-sm-9">
+    		<p> Usar una copia local. Sí un navegador tiene una página como cache, y la página es requerida. Algunos navegadores (como Netscape Navigator) transmiten al servidor web la marca de tiempo de "última modificación" en la copia en caché del navegador. Si la copia en el servidor no es más nueva que la copia del navegador, el servidor devuelve un código 304 en lugar de devolver la página, lo que reduce el tráfico de red innecesario. Esto no es un error.</p>
+    	</div>
+
+    	<div class=" text-center col-3 col-sm-3 ">
+    		<h6 class="title_idx6 ">401</h6>
+    	</div>
+    	<div class="col-9 col-sm-9">
+    		<p> No autorizado. El cliente, el usuario que realiza la solicitud del servidor, no ha sido autenticado.</p>
+    	</div>
+
+
+    	<div class=" text-center col-3 col-sm-3">
+    		<h6 class="title_idx6">403</h6>
+    	</div>
+    	<div class="col-9 col-sm-9">
+    		<p> Prohibido. Se conoce la identidad del cliente pero no se le ha dado autorización de acceso..</p>
+    	</div>
+
+
+    	<div class=" text-center col-3 col-sm-3">
+    		<h6 class="title_idx6">404</h6>
+    	</div>
+    	<div class="col-9 col-sm-9">
+    		<p> No encontrado. Este es el código de error más frecuente y reconocido. Significa que no se reconoce la URL o que el recurso en la ubicación no existe..</p>
+    	</div>
+
+        <div class=" text-center col-3 col-sm-3">
+    		<h6 class="title_idx6">500</h6>
+    	</div>
+    	<div class="col-9 col-sm-9">
+    		<p> Error de servidor. El servidor ha encontrado una situación que no sabe cómo manejar.</p>
+    	</div>    
+
+    </div>
+
+    <div class="container contenedor2">
+    	<div class="row" id="ref"><!--referencias-->
+		<div class="col-10 col-sm-10 ">
+			<h3 class="text-center">Páginas consultadas:</h3>
+			<ul>
+				<li><a href="https://www.ionos.mx/digitalguide/hosting/cuestiones-tecnicas/protocolo-http/" target="_blank">ionos.mx</a> </li>
+				 <li><a href="https://es.wikipedia.org/wiki/Protocolo_de_transferencia_de_hipertexto#Mensajes" target="_blank"></a>wikipedia.org </li>
+				 <li><a href="https://developer.mozilla.org/es/docs/Web/HTTP/Overview" target="_blank">developer.mozilla.org</a> </li>
+				 <li><a href="https://whatis.techtarget.com/definition/HTTP-Hypertext-Transfer-Protocol" target="_blank">techtarget.com</a> </li>
+				 <li><a href="https://docs.oracle.com/cd/E19857-01/817-6247-10/agaphttp.html" target="_blank">oracle.com</a> </li>
+			</ul>
+		</div>
+		<div class="offset-sm-5 ">
+	      <form>
+	        <input type="button" name="imprimir" value="Imprimir página" id="btnPrint">
+	      </form>
+	    </div>
+	</div><!--referencias-->
+    </div>
+
+	
+	
+</div><!--contenedor -->
+
+ <script type="text/javascript"  src="js/jquery-3.5.1.min.js"></script>
+ <script  type="text/javascript" src="js/bootstrap.min.js"></script>
+ 
+</body>
+</html>
