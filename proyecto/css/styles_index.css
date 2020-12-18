@@ -1,0 +1,185 @@
+*{
+	margin:0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+body{
+	background: url(../imagenes_index/bg.jpeg);
+}
+
+.container{
+	width: 100%;
+	height: 100vh;
+	
+	background-position: center;
+	background-size: cover;
+	padding-left: 8%;
+	padding-right: 8%;
+	box-sizing: border-box;
+
+}
+.prueba{
+	background: url(../imagenes_index/bg.jpeg);
+}
+
+.navbar{
+	height:  12%;
+	display: flex;
+	align-items: center;
+}
+
+.logo{
+	width: 50px;
+	cursor: pointer;
+}
+
+.menu-icon{
+	width: 30px;
+	cursor: pointer;
+	margin-left: 40px;
+}
+nav{
+	flex: 1;
+	text-align: right;
+}
+
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-left: 60px;
+}
+ 
+nav ul li a{
+	text-decoration: none;
+	color: #FFF;
+	font-size: 13px;
+}
+
+.row{
+	display: flex;
+	height: 88%;
+	align-items: center;
+}
+
+.col{
+	flex-basis: 50%;
+}
+
+h1{
+	color: #FFF;
+	font-size: 100px;
+	text-shadow: 1px 1px .5px black;
+}
+
+.continent{
+	color: #FFF;
+	font-size: 16px;
+	line-height: 15px;
+}
+
+.black:link{
+	color: black;
+}
+
+
+.black:visited{
+	color: black;
+}
+
+.black:active{
+	color: black;
+}
+
+
+
+button{
+	width: 180px;
+	color: #000;
+	font-size: 12px;
+	padding: 12px 0;
+	background: #FFF;
+	border:0;
+	border-radius: 20px;
+	outline: none;
+	margin-top: 30px;
+}
+button:hover{
+	background-color: #FFFFFF80; 
+}
+
+.card{
+	width: 200px;
+	height: 230px;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 15px 25px;
+	box-sizing: border-box;
+	cursor: pointer;
+	margin: 10px 15px;
+	background-position: center;
+	background-size: cover;
+	transition: transform 0.5s;
+}
+
+.card1{
+	background-image: url(../imagenes_index/america.jpeg);
+}
+
+.card2{
+	background-image: url(../imagenes_index/asia.jpeg);
+}
+
+.card3{
+	background-image: url(../imagenes_index/africa.jpeg);
+}
+
+.card4{
+	background-image: url(../imagenes_index/oceania.jpeg);
+}
+
+.card:hover{
+	transform: translateY(-10px);
+}
+
+h5{
+	color: #FFF;
+	text-shadow: 0 0 5px #999;
+}
+.card p{
+	text-shadow: 0 0 15px #000;
+	font-size: 8px;
+}
+
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: #EAF2E3B3;
+}
+
+/* selected link */
+a:active {
+  color:  white;
+}
+
+.title{
+	font-size: 20px;
+	 text-shadow: 0 0 3px black;
+  
+}
+.inicio, .inicio:hover{
+	color: #343436;
+	text-decoration: none;
+}
+
+li a:hover{
+	text-decoration: none;
+}
