@@ -65,14 +65,6 @@ a.icons{
 	text-decoration: none;
 }
 
-.espaciador_sm{
-	margin-top: 2rem;
-}
-
-.espaciador{
-	margin-top: 3rem;
-}
-
 .referencias{
 	background-color: #116695; 
 }
@@ -81,6 +73,14 @@ a.icons{
 	color: white;
 }
 
+.espaciador{
+	margin-top: 3rem;
+}
+
 .espacio_margin{
 	margin-top: 2rem;
+}
+
+.margin_bottom{
+	padding-bottom: 5rem;
 }
