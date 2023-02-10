@@ -61,9 +61,16 @@ h3 span{
 	box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
 }
 
+a.nodecoration{
+	text-decoration: none;
+	color: 	black;
+}
+
+
 a.icons{
 	text-decoration: none;
 }
+
 
 .referencias{
 	background-color: #116695; 
@@ -83,4 +90,8 @@ a.icons{
 
 .margin_bottom{
 	padding-bottom: 5rem;
+}
+
+.referencias{
+	padding-bottom: 2rem;
 }
