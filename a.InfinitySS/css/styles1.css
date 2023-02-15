@@ -27,7 +27,7 @@ video {
 	height: auto;
 }
 
-.boderLeft{
+.borderLeft{
 	border-left-style: solid;
 	border-width: 5px;
 	border-color: #00C5F4;
@@ -35,13 +35,12 @@ video {
 	
 }
 
-.boderRight{
+.borderRight{
 	border-right-style: solid;
 	border-color: #00C5F4;
 	background-color: #E0F9FF;
 	
 }
-
 
 p{
 	text-align: justify;
@@ -66,11 +65,9 @@ a.nodecoration{
 	color: 	black;
 }
 
-
 a.icons{
 	text-decoration: none;
 }
-
 
 .referencias{
 	background-color: #116695; 
