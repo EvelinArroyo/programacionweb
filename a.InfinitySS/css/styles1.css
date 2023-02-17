@@ -69,7 +69,7 @@ a.icons{
 	text-decoration: none;
 }
 
-.referencias{
+.footBackgroundColor{
 	background-color: #116695; 
 }
 
@@ -77,24 +77,27 @@ a.icons{
 	color: white;
 }
 
-.espaciador{
-	margin-top: 3rem;
-}
-
-.marginBT{
-	margin-top: 3rem;
-	margin-bottom: 2rem;
-}
-.espacio_margin{
+/***margin**/
+.marginT2{
 	margin-top: 2rem;
 }
 
-.margin_bottom{
+.marginT3{
+	margin-top: 3rem;
+}
+
+.marginBT3x2{
+	margin-top: 3rem;
+	margin-bottom: 2rem;
+}
+
+.marginB5{
 	padding-bottom: 5rem;
 }
 
-.referencias{
-	padding-bottom: 2rem;
+/**padding**/
+.paddingT5{
+	padding-top: 5rem;
 }
 
 .space3px{
