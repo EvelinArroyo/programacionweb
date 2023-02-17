@@ -92,3 +92,20 @@ a.icons{
 .referencias{
 	padding-bottom: 2rem;
 }
+
+.space3px{
+	letter-spacing: 2px;
+}
+
+.ident30px{
+	text-indent: 30px;
+}
+
+.hover:hover{
+transform: scale(1.2);
+}
+
+.max-size{
+    max-height: 40%;
+    max-width: 	30%;
+}
