@@ -14,10 +14,19 @@
 
 .row1{
 	background: url("../images/home.png") center center no-repeat;
-	color: white;
 	height: 800px;
-	width: 100%
+	width: 100%;
 	margin-left:0px;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.row2{
+	background: url("../images/huella.jpg") center center no-repeat;
+	height: 200px;
+	width: 100%;
+	margin-left:0px;
+	color: black;
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -136,6 +145,10 @@ a.icons{
 /**padding**/
 .paddingT5{
 	padding-top: 5rem;
+}
+
+.paddingT6{
+	padding-top: 6rem;
 }
 
 .space3px{
