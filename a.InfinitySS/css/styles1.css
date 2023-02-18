@@ -115,6 +115,10 @@ a.icons{
 	color: white;
 }
 
+a.no_decoration{
+	text-decoration: none;
+	color: white;
+}
 /**color**/
 .footBackgroundColor{
 	background-color: #116695; 
@@ -166,4 +170,13 @@ a.icons{
 .max-size{
 	max-height: 60%;
 	max-width: 	50%;
+}
+
+.divAsesoria{
+	background-color: #99D8FB;
+	color: white;
+	border-radius: 8px;
+  	padding: 5px;
+	padding-left: 90px;
+	padding-right: 90px;	
 }
