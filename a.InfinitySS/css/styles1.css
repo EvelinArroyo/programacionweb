@@ -22,8 +22,8 @@
 }
 
 .row2{
-	background: url("../images/huella.jpg") center center no-repeat;
-	height: 200px;
+	background: url("../images/ca2.svg") center center no-repeat;
+	height: 250px;
 	width: 100%;
 	margin-left:0px;
 	color: black;
@@ -173,4 +173,21 @@ a.icons{
 	border-radius: 8px;
   	padding: 40px;
 	text-align: center;	
+	margin-bottom: 2rem;
 }
+
+.div2{
+	background-color: #E0F9FF;
+	border-radius: 8px;
+  	padding: 40px;
+  	margin-bottom: 2rem;
+  	font-size: 18px;
+  	border-color: #00C5F4;
+	border-left-style: solid;
+	border-width: 5px;
+	line-height: 1.8rem;
+}
+
+.div2:hover{
+	background-color: #D0DBDE;
+	}
