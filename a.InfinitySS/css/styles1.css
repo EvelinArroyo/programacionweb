@@ -114,11 +114,6 @@ a.icons{
 	text-decoration: none;
 	color: white;
 }
-
-a.no_decoration{
-	text-decoration: none;
-	color: white;
-}
 /**color**/
 .footBackgroundColor{
 	background-color: #116695; 
@@ -176,7 +171,6 @@ a.no_decoration{
 	background-color: #99D8FB;
 	color: white;
 	border-radius: 8px;
-  	padding: 5px;
-	padding-left: 90px;
-	padding-right: 90px;	
+  	padding: 40px;
+	text-align: center;	
 }
