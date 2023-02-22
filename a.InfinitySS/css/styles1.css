@@ -31,6 +31,7 @@
 	background-attachment: fixed;
 }
 
+
 video {
 	width: 100%;
 	height: auto;
@@ -132,6 +133,10 @@ a.icons{
 	margin-top: 3rem;
 }
 
+.marginT8{
+	margin-top: 8rem;
+}
+
 .marginBT3x2{
 	margin-top: 3rem;
 	margin-bottom: 2rem;
@@ -171,7 +176,7 @@ a.icons{
 	background-color: #99D8FB;
 	color: white;
 	border-radius: 8px;
-  	padding: 40px;
+	padding: 40px;
 	text-align: center;	
 	margin-bottom: 2rem;
 }
@@ -179,10 +184,10 @@ a.icons{
 .div2{
 	background-color: #E0F9FF;
 	border-radius: 8px;
-  	padding: 40px;
-  	margin-bottom: 2rem;
-  	font-size: 18px;
-  	border-color: #00C5F4;
+	padding: 40px;
+	margin-bottom: 2rem;
+	font-size: 18px;
+	border-color: #00C5F4;
 	border-left-style: solid;
 	border-width: 5px;
 	line-height: 1.8rem;
@@ -190,4 +195,8 @@ a.icons{
 
 .div2:hover{
 	background-color: #D0DBDE;
-	}
+}
+
+.div3{
+	
+}
