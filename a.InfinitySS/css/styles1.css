@@ -115,6 +115,28 @@ a.icons{
 	text-decoration: none;
 	color: white;
 }
+
+a.breadcrum1{
+	text-decoration: none;
+	color: black;
+}
+
+.breadcrum:hover{
+	color: white;
+}
+
+.breadcrum:link {
+	text-decoration: none;
+}
+
+.breadcrum:visited {
+	text-decoration: none;
+}
+.breadcrum:active{
+	color: white;
+}
+
+
 /**color**/
 .footBackgroundColor{
 	background-color: #116695; 
@@ -197,6 +219,3 @@ a.icons{
 	background-color: #D0DBDE;
 }
 
-.div3{
-	
-}
