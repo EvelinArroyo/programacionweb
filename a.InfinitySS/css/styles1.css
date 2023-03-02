@@ -228,4 +228,15 @@ a.breadcrum1{
 	background-color: #D0DBDE;
 }
 
+.borderDiv{
+	border-color: black;
+	border-radius: 8px;
+	border: 1px solid;
+	padding: 20px;
+}
+
+.bor{
+	border-color: black;
+	border: 1px solid;
+}
 
