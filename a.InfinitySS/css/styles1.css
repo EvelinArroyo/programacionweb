@@ -259,3 +259,19 @@ a.breadcrum1{
 .transition1{
 	animation: transitionIn 0.75s ;
 }
+
+@keyframes transitionIn2{
+	from{
+		opacity: 0;
+		transform:translateY(-10px);
+	}
+
+	to{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.transition2{
+	animation: transitionIn2 0.75s ;
+}
