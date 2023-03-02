@@ -203,6 +203,15 @@ a.breadcrum1{
 	margin-bottom: 2rem;
 }
 
+.divAsesoria2{
+	background-color: #9FD0FF;
+	color: white;
+	border-radius: 8px;
+	padding: 40px;
+	text-align: center;	
+	margin-bottom: 2rem;
+}
+
 .div2{
 	background-color: #E0F9FF;
 	border-radius: 8px;
@@ -218,4 +227,5 @@ a.breadcrum1{
 .div2:hover{
 	background-color: #D0DBDE;
 }
+
 
