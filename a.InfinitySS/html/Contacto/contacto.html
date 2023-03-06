@@ -67,7 +67,7 @@
 			<div class="container"><!--contenedor -->
 				<div class="row paddingT10">
 					<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-						<h2 class="text-center white_font">Contáctanos.</h2>
+						<h1 class="text-center white_font">Contáctanos.</h1>
 					</div>
 				</div>	
 			</div><!--contenedor -->
@@ -113,15 +113,16 @@
 					</div><!--row 2-->
 				</div><!--col 1-->
 				<div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8"><!--col 2-->
-					<section id="formulario" name="formulario">
+					<section id="formulario" class="form-group">
 						<form action="/action_page.php">
-							<input type="text" id="name" name="name" placeholder="Nombre*">
-							<input type="text" id="apellido" name="apellido" placeholder="Apellido*">
+							<input type="text" class="form-control" id="name_contacto" placeholder="Nombre*">
+							<input type="text" class="form-control" id="apellido_contacto" placeholder="Apellido*">
 							<br>
-							<input type="text" id="apellido" name="apellido" placeholder="Correo Electrónico">
+							 <input type="email" class="form-control" id="email_contacto" aria-describedby="emailHelp" placeholder="Correo Electrónico">
 							<input type="text" id="apellido" name="apellido" placeholder="Número de contacto">
 							<br>
-							<input type="submit" value="Enviar Mensaje">
+							<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="¿Cómo podemos ayudarte?" rows="5"></textarea>
+							 <button type="submit" class="btn btn-primary mb-2">Enviar Mensaje</button>
 						</form>
 					</section>
 				</div><!--col 2-->
