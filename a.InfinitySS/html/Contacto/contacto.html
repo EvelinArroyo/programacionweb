@@ -115,12 +115,20 @@
 				<div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8"><!--col 2-->
 					<section id="formulario" class="form-group">
 						<form action="/action_page.php">
+							<div class="row">
+								<div class="col-6">
 							<input type="text" class="form-control" id="name_contacto" placeholder="Nombre*">
+								</div>
+								<div class="col-6">
 							<input type="text" class="form-control" id="apellido_contacto" placeholder="Apellido*">
-							<br>
+								</div>
+								<div class="col-6">
 							 <input type="email" class="form-control" id="email_contacto" aria-describedby="emailHelp" placeholder="Correo Electrónico">
-							<input type="text" id="apellido" name="apellido" placeholder="Número de contacto">
-							<br>
+								</div>
+								<div class="col-6">
+							<input type="text" id="phone" class="form-control" placeholder="Telefono"/> 
+								</div>
+							</div>
 							<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="¿Cómo podemos ayudarte?" rows="5"></textarea>
 							 <button type="submit" class="btn btn-primary mb-2">Enviar Mensaje</button>
 						</form>
